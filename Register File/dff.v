@@ -4,15 +4,14 @@ input D, clock, sel, clear;
 output Q;
 
 reg Q;
-
 wire in;
+	
 assign in = (D & sel) + (Q & ~sel);
-
-always @(negedge clock)
+	always @(posedge clock)
 	if (clear == 1'b1) begin
 		Q <= 1'b0;
 	end else begin
 		Q <= in;
 	end
- 
+	
 endmodule
