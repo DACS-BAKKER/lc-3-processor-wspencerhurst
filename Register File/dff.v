@@ -1,6 +1,6 @@
 module dff_1_bit(clock, D, sel, Q, clear);
 
-input D, clock, sel, clear;
+input clock, D, sel, clear;
 output Q;
 
 reg Q;
