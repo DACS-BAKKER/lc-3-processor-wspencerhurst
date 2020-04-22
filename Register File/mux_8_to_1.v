@@ -5,7 +5,6 @@ input [15:0] in0, in1, in2, in3, in4, in5, in6, in7;
 output reg [15:0] out;
 
 always @(*) begin
-	
 	if (sel == 3'b000)
 		out <= in0;
 	else if (sel == 3'b001)
@@ -22,7 +21,6 @@ always @(*) begin
 		out <= in6;
 	else if (sel == 3'b111)
 		out <= in7;
-
 end
 
 endmodule
