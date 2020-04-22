@@ -21,4 +21,5 @@ always @(*) begin
 	else if (in == 3'b111)
 		out <= 8'b10000000;
 end	
+	
 endmodule
